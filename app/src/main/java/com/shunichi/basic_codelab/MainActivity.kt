@@ -78,9 +78,13 @@ private fun OnBoardingScreen(onContinueClicked: () -> Unit) {
     }
 }
 
-@Preview(showBackground = true, widthDp = 320, heightDp = 320)
+@Preview(
+    showBackground = true,
+    widthDp = 320,
+    heightDp = 320
+)
 @Composable
-fun OnBoardingPreview() {
+fun PreviewOnBoarding() {
     BasicCodelabTheme {
         OnBoardingScreen(onContinueClicked = {})
     }
@@ -156,11 +160,15 @@ private fun CardContent(name: String) {
     showBackground = true,
     widthDp = 320,
     uiMode = UI_MODE_NIGHT_YES,
-    name = "DefaultPreviewDark"
+    name = "Dark"
 )
-@Preview(showBackground = true, widthDp = 320)
+@Preview(
+    showBackground = true,
+    widthDp = 320,
+    name = "Light"
+)
 @Composable
-fun DefaultPreview() {
+fun PreviewGreetings() {
     BasicCodelabTheme {
         Greetings()
     }
